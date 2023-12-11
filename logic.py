@@ -13,7 +13,6 @@ def display_board(board):
     print('   |   |')
 
 test_board = ['#','X','O','X','O','X','O','X','O','X']
-display_board(test_board)
 
 def player_input():
     marker = ''
@@ -25,13 +24,9 @@ def player_input():
         return ('X', 'O')
     else:
         return ('O', 'X')
-      
-player_input()
 
 def place_marker(board, marker, position):
     board[position] = marker
-place_marker(test_board,'$',2)
-display_board(test_board)
 
 def win_check(board,mark):
     
